@@ -1,0 +1,30 @@
+ {
+  "schemaVersion": 1,
+  "id": "rings",
+  "version": "${version}",
+  "name": "Rings",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/asus/Rings"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/rings/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "net.kevydevy.rings.client.RingsClient"
+    ],
+    "main": [
+      "net.kevydevy.rings.Rings"
+    ]
+  },
+  "mixins": [
+    "rings.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
